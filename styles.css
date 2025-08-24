@@ -1,19 +1,28 @@
 table {
   border-collapse: collapse;
   width: 100%;
-  margin: 20px auto;
-  text-align: center;
+  margin: 20px auto;   /* table stays in center */
   font-family: Arial, sans-serif;
+	border: 1px solid black;
 }
 
 thead th {
   background-color: #8b2d2d; /* Dark red */
   color: #fff;
   padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;  /* header stays centered */
+}
+
+tbody th {
+  text-align: left;
+  padding: 8px;
   border: 1px solid black;
 }
 
-tbody th, tbody td {
+/* Numbers aligned to the right */
+tbody td {
+  text-align: right;
   border: 1px solid black;
   padding: 8px;
 }
@@ -26,8 +35,10 @@ tbody th, tbody td {
 
 .chest-row th, .chest-row td {
   background-color: #f3e1e1; /* Light pink */
+  color: black;
 }
 
 .sleeve-row th, .sleeve-row td {
   background-color: #e5e5e5; /* Grey */
+  color: black;
 }
