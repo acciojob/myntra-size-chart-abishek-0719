@@ -1,29 +1,30 @@
 table {
   border-collapse: collapse;
   width: 100%;
-  margin: 20px auto;   /* table stays in center */
+  margin: 20px auto;   /* table stays centered */
   font-family: Arial, sans-serif;
-	border: 1px solid black;
 }
 
+/* Header row: left-aligned text */
 thead th {
   background-color: #8b2d2d; /* Dark red */
   color: #fff;
   padding: 10px;
-  border: 1px solid #ccc;
-  text-align: center;  /* header stays centered */
+  border: 1px solid #000;   /* ✅ black border */
+  text-align: left;
 }
 
+/* First column (Part names) left aligned */
 tbody th {
   text-align: left;
   padding: 8px;
-  border: 1px solid black;
+  border: 1px solid #000;   /* ✅ black border */
 }
 
-/* Numbers aligned to the right */
+/* Numbers inside table right aligned */
 tbody td {
   text-align: right;
-  border: 1px solid black;
+  border: 1px solid #000;   /* ✅ black border */
   padding: 8px;
 }
 
